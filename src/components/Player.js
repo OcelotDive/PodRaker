@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Navbar from './Navbar';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 import ReactTooltip from 'react-tooltip'
 import noimagefound from '../images/noimagefound.jpg';
@@ -47,7 +48,7 @@ class Player extends Component {
 	<div id="player" className="player">
 		</div>
 		
-		
+		<Link to="/"><div className="center searchAgainButton">Search Again</div></Link>
 		</div>
 	)
 		
