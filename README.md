@@ -2,7 +2,7 @@
 # Podcast Search Engine and Player
 ### Created Using React and Redux
 
-
+![Main Page](https://github.com/OcelotDive/PodRaker/blob/master/src/images/podraker.PNG)
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
