@@ -94,7 +94,7 @@ h5 {
 	height: auto;
 	margin-left: 15%;
 	margin-right: 15%;
-	margin-top: 3%;
+	margin-top: 5%;
 	flex-wrap: wrap;
 	flex: 1 1 50%;
 	justify-content: space-around;
@@ -119,9 +119,10 @@ img {
 	transform: scale(1);
 	transition: 0.8s ease;
 	border-radius: 3px 3px 3px;
+	position: relative;
 }
 .pod:hover {
-	transform: scale(1.2);
+	transform: scale(1.2) translateX(-45px);
 	transition: 0.8s ease;
 	z-index: 5;
 }
@@ -293,4 +294,157 @@ img {
 	background-image: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
 	color: #fff;
 
+}
+
+/*new card shape*/
+
+.cardDesign2 {
+    background-color: #fff;
+    bottom: 0;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3);
+    height: 110px;
+    left: 0;
+    margin: auto;
+    overflow: hidden;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+	
+}
+.card2Image {
+	position: absolute;
+	left: 0;
+	top: 0%;
+	width: 100%;
+	height: 100%;	
+}
+
+
+
+
+
+.cardDesign2:hover {
+    height: 300px;
+    width: 200px;
+	
+	
+}
+.cardDesign2:hover .cta-container {
+    display: block;
+	position: absolute;
+	bottom: 0.2%;
+	
+}
+.cardDesign2:hover {
+    background-size: cover;
+    border-radius: 0;
+    margin-top: -130px;
+}
+.cardDesign2:hover h3 {
+    background: #000;
+    color: #fff;
+    margin-top: 100px;
+    padding: 5px;
+}
+.cardDesign2:hover h3 small { color: #000 }
+.cardDesign2:hover p { margin-top: 160px }
+.cardDesign2:hover .card2Image {
+	height: 50%;
+}
+.cardDesign2 h3 {
+    color: #3487f7;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+    margin-top: 150px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 9999;
+	margin-left: 0;
+}
+.cardDesign2 p {
+    color: rgba(0,0,0,.6);
+    font-family: 'Raleway', sans-serif;
+    font-size: 10px;
+    font-weight: normal;
+    margin-top: 210px;
+    position: absolute;
+    text-align: center;
+    z-index: 9999;
+	margin-left: 5px;
+	margin-right: 5px;
+	
+}
+.cta-container {
+    display: none;
+    margin-top: 5px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 9999;
+	margin-left: 0;
+
+}
+.cta {
+    -moz-border-radius: 2px;
+    -moz-transition: 0.2s ease-out;
+    -ms-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+    -webkit-border-radius: 2px;
+    -webkit-transition: 0.2s ease-out;
+    background-clip: padding-box;
+    border: 2px solid #3487f7;
+    border-radius: 2px;
+    color: #3487f7;
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    height: 36px;
+    letter-spacing: 0.5px;
+    line-height: 36px;
+    margin-bottom: 15px;
+    padding: 0 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.2s ease-out;
+}
+.cta:hover {
+    background-color: #3487f7;
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: #fff;
+    -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card2Title {
+	position: absolute;
+	width: 100%;
+	height: 100px;
+	color: rgba(0,0,0,.6);
+    font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	top: 50%;
+	font-size: 70%;
+	text-align: center;
+	display: none;
+	 z-index: 9999;
+	margin-bottom: 5px;
+	
+	
+}
+
+
+.cardDesign2:hover .card2Title {
+	 display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	
+	
 }
