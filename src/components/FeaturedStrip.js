@@ -22,7 +22,7 @@ const FeaturedStrip = (props) => {
 
     
     return(
-		<div>
+		<div className="animated slideInLeft">
 		<h4 className="featuredTitle center">Featured Podcasts</h4>
 		<Scrollbar style={ {width: '100%', minHeight: 290} } >
     <section className="featuredStrip">

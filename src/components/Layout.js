@@ -11,23 +11,38 @@ class Layout extends Component {
 	
 		if(this.props.combinedArray.length < 1){this.props.history.push('/');}
 	
-	
+		console.log(this.props.combinedArray)
 		let results = this.props.combinedArray.map((_,i,a)=>{
 			if(_.image_url !== null) {
 			return (
 			
-				<Link to={'/player' + i}><div className="pod container" data-tip={_.title}>
-				<img src={_.image_url} />
+		<Link to={'/player' + i}><div className="pod container">	
+		<div className="card2">	
+         <div className="cardDesign2 transition">
+        
+         <div className="cta-container"><a href="#" className="cta">Listen</a></div>
+         <img className="card2Image" src={_.image_url} />
+			<div className="card2Title">{_.title}</div>			
+        </div>
+			
+        </div>
 				
-				</div></Link>
+		</div></Link>
 			)
 		}
 		else {
 			return (
-				<Link to={'player' + i}><div className="pod container" data-tip={_.title}>
-				<img src={noimagefound} />
+				<Link to={'/player' + i}><div className="pod container">	
+		<div className="card2">	
+         <div className="cardDesign2 transition">
+         
+         <div className="cta-container"><a href="#" className="cta">Listen</a></div>
+         <img className="card2Image" src={noimagefound} />
+		 <div className="card2Title">{_.title}</div>			
+        </div>
+        </div>
 				
-				</div></Link>								  
+		</div></Link>								  
 				   )									   
 												   
 			 }										   
