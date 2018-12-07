@@ -18,9 +18,9 @@ class App extends Component {
      	
 		
 		
-		<Route exact path="http://ocelotdive.github.io/podraker/" component={Dashboard}/>
-		<Route exact path="http://ocelotdive.github.io/podraker/layout" component={Layout}/>
-		<Route exact path="http://ocelotdive.github.io/podraker/player:id" component={Player}/>
+		<Route exact path={process.env.PUBLIC_URL + "/"} component={Dashboard}/>
+		<Route exact path={process.env.PUBLIC_URL + "/layout"} component={Layout}/>
+		<Route exact path={process.env.PUBLIC_URL + "/player:id"} component={Player}/>
       </div>
 		</BrowserRouter>
     );
