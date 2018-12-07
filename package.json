@@ -2,7 +2,7 @@
   "name": "podraker",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ocelotdive.github.io/podraker/",
+  "homepage": "https://ocelotdive.github.io/podraker",
   "dependencies": {
     "axios": "^0.18.0",
     "gh-pages": "^2.0.1",
@@ -18,7 +18,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && cp build/index.html build/404.html",
+    "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
