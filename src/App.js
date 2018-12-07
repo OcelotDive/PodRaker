@@ -13,12 +13,12 @@ class App extends Component {
 	
   render() {
     return (
-		<BrowserRouter  basename={process.env.PUBLIC_URL}>
+		<BrowserRouter>
       <div className="App">
      	
 		
 		
-		<Route exact path="/" component={Dashboard}/>
+		<Route exact path="https://ocelotdive.github.io/podraker" component={Dashboard}/>
 		<Route exact path="/layout" component={Layout}/>
 		<Route exact path="/player:id" component={Player}/>
       </div>
