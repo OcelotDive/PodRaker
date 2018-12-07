@@ -18,7 +18,7 @@ class App extends Component {
      	
 		
 		
-		<Route exact path="https://ocelotdive.github.io/podraker" component={Dashboard}/>
+		<Route exact path="https://ocelotdive.github.io/podraker/" component={Dashboard}/>
 		<Route exact path="/layout" component={Layout}/>
 		<Route exact path="/player:id" component={Player}/>
       </div>
