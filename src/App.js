@@ -13,14 +13,14 @@ class App extends Component {
 	
   render() {
     return (
-		<BrowserRouter  >
+		<BrowserRouter  basename={process.env.PUBLIC_URL}>
       <div className="App">
      	
 		
 		
-		<Route exact path="#/" component={Dashboard}/>
-		<Route exact path="#/layout" component={Layout}/>
-		<Route exact path="#/player:id" component={Player}/>
+		<Route exact path="/" component={Dashboard}/>
+		<Route exact path="/layout" component={Layout}/>
+		<Route exact path="/player:id" component={Player}/>
       </div>
 		</BrowserRouter>
     );
