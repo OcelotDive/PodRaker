@@ -9,5 +9,5 @@ import rootReducer from './reducers/rootReducer';
 
 const store = createStore(rootReducer);
 
-ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));
+ReactDOM.render(<Provider store={store} basename={process.env.PUBLIC_URL}><App /></Provider>, document.getElementById('root'));
 registerServiceWorker();
